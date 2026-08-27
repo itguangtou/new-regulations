@@ -446,3 +446,17 @@ a {
     font-size: 14px;
   }
 }
+
+/* ===== 隐藏 EdgeOne 预览域名注入的测试提示栏 ===== */
+body > div[style*="fixed"]:not(.article-wrap),
+body > div[class*="banner"],
+body > div[class*="watermark"],
+body > div[class*="demo"],
+body > div:has(> button[aria-label="Close"]) {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
