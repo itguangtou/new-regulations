@@ -54,6 +54,38 @@ a {
   min-height: 60vh;
 }
 
+/* ===== 顶部政府信息公开栏 ===== */
+.gov-header {
+  background: linear-gradient(180deg, #2d6cb5 0%, #1e5596 100%);
+  border-bottom: 3px solid #ffde00;
+}
+
+.gov-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 16px 20px;
+}
+
+.gov-emblem {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: block;
+  object-fit: contain;
+}
+
+.gov-header-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
 .article {
   padding: 28px 22px 40px;
 }
@@ -407,6 +439,21 @@ a {
 
 /* ===== 移动端 ===== */
 @media (max-width: 480px) {
+  .gov-header-inner {
+    padding: 12px 16px;
+    gap: 10px;
+  }
+
+  .gov-emblem {
+    width: 36px;
+    height: 36px;
+  }
+
+  .gov-header-title {
+    font-size: 17px;
+    letter-spacing: 0.06em;
+  }
+
   .article {
     padding: 20px 16px 32px;
   }
